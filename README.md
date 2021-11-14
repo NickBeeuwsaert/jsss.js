@@ -4,7 +4,7 @@ Why use CSS-in-JS when you can use [JSSS](https://en.wikipedia.org/wiki/JavaScri
 
 ## Using
 
-For some reason, I can't imagine why, Javascript in strict mode, which includes ESM modules, doesn't allow the `with` statement. Weird, right?. Anyway, to work around this "bug" <!-- I know its not a bug, don't @ me -->, you can use a transpiler, like [esbuild](https://esbuild.github.io/):
+For some reason, I can't imagine why, Javascript in strict mode, which includes ESM modules, doesn't allow the `with` statement. Weird, right? Anyway, to work around this "bug" <!-- I know its not a bug, don't @ me -->, you can use a transpiler, like [esbuild](https://esbuild.github.io/):
 
 ```sh
 esbuild --format=iife --global-name=jsss --bundle jsss.js --outfile=jsss.bundle.js
